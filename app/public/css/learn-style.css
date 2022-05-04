@@ -1,0 +1,86 @@
+.app-container {
+  text-align: center;
+  width: 530px;
+  height: 943px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #0f2027;
+  border-style: solid;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 45px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app-container .nav {
+  display: flex;
+}
+
+.app-container .nav .name {
+  padding: 10px;
+  margin-right: auto;
+  color: whitesmoke;
+}
+
+.app-container .nav .name h3 {
+  text-align: left;
+}
+
+.app-container .nav .mode {
+  text-align: center;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+.app-container .nav .mode h3 {
+  color: aliceblue;
+}
+
+.home .fa-home {
+  margin-top: 20px;
+  color: white;
+  font-size: 32px;
+  padding: 12px;
+}
+
+.home .fa-home:hover {
+  cursor: pointer;
+}
+
+.app-container .answer h3 {
+  color: aliceblue;
+  font-size: 26px;
+}
+.app-container .answer h4 {
+  color: aliceblue;
+  font-size: 36px;
+  margin-top: -5px;
+}
+
+.app-container .webcam-container {
+  margin-top: 80px;
+}
+
+.app-container .btns {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container .btns div:not(:last-child) {
+  margin-right: 30px;
+}
+
+.app-container .btns div:hover {
+  cursor: pointer;
+}
+
+.fa-backspace {
+  font-size: 48px;
+  color: white;
+}
+
+.fa-toggle-on {
+  font-size: 52px;
+  color: white;
+}

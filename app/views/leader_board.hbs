@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunLearn - Score Board</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/css/leader-board-style.css">
+</head>
+
+<body onload="myScore()">
+  <div class="app-container">
+    <div class="nav">
+      <div class="name">
+        {{#if post}}
+        <h3>User: <span id="navusername">{{post.username}}</span></h3>
+        <h3>Score: {{post.score}}</h3>
+        {{/if}}
+      </div>
+      <div class="home" onclick="window.location.href='/homepage'">
+        <i class="fas fa-home"></i>
+      </div>
+    </div>
+    <h2>
+      Score Board <br>
+      Top 15
+    </h2>
+
+    <div class="score-table">
+      {{#if post.resultsArr}}
+      <table id="ranktable">
+        <tr>
+          <th>Rank</th>
+          <th>User Name</th>
+          <th>Score</th>
+        </tr>
+        {{#each post.resultsArr}}
+        <tr>
+          <td>{{this.rank_place}}</td>
+          <td>{{this.user_name}}</td>
+          <td>{{this.score}}</td>
+        </tr>
+        {{/each}}
+      </table>
+      {{/if}}
+    </div>
+
+  </div>
+  <script src="/scripts/score_board_hlt.js" type="text/javascript"></script>
+</body>
+
+</html>

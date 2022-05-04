@@ -1,0 +1,78 @@
+.app-container {
+  text-align: center;
+  width: 530px;
+  height: 943px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #0f2027;
+  border-style: solid;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 45px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app-container .nav {
+  display: flex;
+}
+
+.app-container .nav .name {
+  padding: 10px;
+  margin-right: auto;
+  color: whitesmoke;
+}
+
+.app-container .nav .name h3 {
+  text-align: left;
+}
+
+.home .fa-home {
+  margin-top: 20px;
+  color: white;
+  font-size: 32px;
+  padding: 12px;
+}
+
+.home .fa-home:hover {
+  cursor: pointer;
+}
+
+.app-container h2 {
+  color: aliceblue;
+  font-size: 36px;
+  margin-top: 100px;
+}
+
+.app-container .btns {
+  text-align: center;
+  position: relative;
+  margin-top: 85px;
+}
+
+.app-container .btns .btns1 {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container .btns .btns2 {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.app-container .btns img {
+  width: 135px;
+  height: 135px;
+}
+
+.app-container .btns button {
+  text-align: center;
+  display: block;
+  background-color: rgba(245, 245, 220, 0);
+  border: none;
+  padding: 20px;
+}
+
+.app-container .btns button:hover {
+  cursor: pointer;
+}

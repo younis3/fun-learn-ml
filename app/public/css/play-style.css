@@ -1,0 +1,225 @@
+.app-container {
+  position: relative;
+  text-align: center;
+  width: 530px;
+  height: 943px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #0f2027;
+  border-style: solid;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 45px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app-container .nav {
+  display: flex;
+}
+
+.app-container .nav .name {
+  padding: 10px;
+  margin-right: auto;
+  color: whitesmoke;
+}
+
+.app-container .nav .name h3 {
+  text-align: left;
+}
+
+.app-container .nav .mode {
+  text-align: center;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+.app-container .nav .mode h3 {
+  color: aliceblue;
+}
+
+.home .fa-home {
+  margin-top: 20px;
+  color: white;
+  font-size: 32px;
+  padding: 12px;
+}
+
+.home .fa-home:hover {
+  cursor: pointer;
+}
+
+.app-container .ques h3 {
+  color: aliceblue;
+  font-size: 26px;
+}
+.app-container .ques h4 {
+  color: aliceblue;
+  font-size: 36px;
+  margin-top: -6px;
+}
+
+.app-container .webcam-container {
+  margin-top: 60px;
+  border: dotted wheat 2px;
+  padding: 6px;
+}
+
+.app-container .btns {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container .btns div:not(:last-child) {
+  margin-right: 30px;
+}
+
+.app-container .btns div:hover {
+  cursor: pointer;
+}
+
+.fa-backspace {
+  margin-top: 10px;
+  font-size: 42px;
+  color: white;
+  opacity: 80%;
+}
+
+.fa-camera {
+  font-size: 62px;
+  color: white;
+  opacity: 90%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.fa-toggle-on {
+  margin-top: 8px;
+  font-size: 48px;
+  color: white;
+  opacity: 80%;
+}
+
+.fa-forward {
+  font-size: 62px;
+  color: white;
+  opacity: 90%;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.fa-forward:hover {
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+#canvas {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+  margin-top: 364px;
+}
+
+.flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.lives .fa-heart {
+  opacity: 99%;
+  margin-top: 14px;
+  color: white;
+  font-size: 24px;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#congrats {
+  display: none;
+  width: 80%;
+  margin-top: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#gamelost {
+  display: none;
+  width: 95%;
+  margin-top: 30px;
+}
+
+#savescorebtn {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #eeeeee;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 14%;
+  margin-bottom: -36px;
+}
+
+#savescorebtn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #5b6669;
+  cursor: pointer;
+}
+
+.addscore-container {
+  position: absolute;
+  z-index: 9999;
+  left: 50px;
+  top: 236px;
+  transform: translate(-50%, -50%);
+}
+
+.add-comment {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.score-popup {
+  color: #ffffff;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: fade-in-up;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes fade-in-up {
+  0%,
+  10% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: -100%;
+    opacity: 0;
+  }
+}

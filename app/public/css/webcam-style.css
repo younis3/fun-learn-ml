@@ -1,0 +1,57 @@
+#webcam {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.445);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webcam-front {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.webcam-rear {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#canvas {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#btn-close {
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+}
+
+#btn-close:hover {
+  cursor: pointer;
+  background-color: rgb(140, 151, 151);
+  color: aliceblue;
+}
+
+#btn-flip {
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+}
+
+#btn-flip:hover {
+  cursor: pointer;
+  background-color: rgb(140, 151, 151);
+  color: aliceblue;
+}
+
+#btnScreenshot {
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}

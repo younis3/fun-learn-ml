@@ -1,0 +1,70 @@
+.app-container {
+  text-align: center;
+  width: 530px;
+  height: 943px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #0f2027;
+  border-style: solid;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 45px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app-container .nav {
+  display: flex;
+}
+
+.app-container .nav .name {
+  padding: 10px;
+  margin-right: auto;
+  color: whitesmoke;
+}
+
+.app-container .nav .name h3 {
+  text-align: left;
+}
+
+.home .fa-home {
+  margin-top: 20px;
+  color: white;
+  font-size: 32px;
+  padding: 12px;
+}
+
+.home .fa-home:hover {
+  cursor: pointer;
+}
+
+.app-container h2 {
+  color: whitesmoke;
+  font-size: 28px;
+  margin-top: 50px;
+}
+
+.app-container .score-table table {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+.app-container .score-table table tr th {
+  background-color: rgb(82, 85, 88);
+  color: whitesmoke;
+  height: 30px;
+}
+
+.app-container .score-table table tr {
+  background-color: rgb(255, 255, 255);
+}
+
+.app-container .score-table .user {
+  background-color: rgb(184, 184, 184);
+}
+
+.app-container .score-table table tr td {
+  font-size: 20px;
+  font-weight: 600;
+}

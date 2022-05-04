@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/settings-style.css">
+
+  <title>FunLearn - Settings - Change Language</title>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="nav">
+      <div class="name">
+        {{#if post}}
+        <h3>User: {{post.username}}</h3>
+        <h3>Score: {{post.score}}</h3>
+        {{/if}}
+      </div>
+      <div class="home" onclick="confirm_home()">
+        <i class="fas fa-home"></i>
+      </div>
+    </div>
+    <h2>
+      Settings<br>
+      Change Language
+    </h2>
+    <div class="form">
+      <form action="change_lng" method="POST">
+        <select name="lang" id="lang" onclick="change_lng_icon()">
+          <option value="English">English</option>
+          <option value="Arabic">العربية</option>
+          <option value="Hebrew">עברית</option>
+        </select>
+        <img class="lng-icon" id="lng_icon"></img>
+        <input class="sbmt" type="submit" onclick="window.location.href='settings.html'">
+      </form>
+      <button class="sbmt" id="cancel" onclick="window.location.href='settings.html'">Cancel</button>
+    </div>
+    <div class="warning-change-lang">
+      <h4>* Currently the app only supports English</h4>
+    </div>
+  </div>
+  <script src="/scripts/confirm.js" type="text/javascript"></script>
+  <script src="/scripts/lng_icon.js" type="text/javascript"></script>
+</body>
+
+</html>

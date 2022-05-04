@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">FunLearn - Play</title>
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/play-style.css">
+  <link rel="stylesheet" href="css/webcam-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="nav">
+      <div class="name">
+        {{#if post}}
+        <h3>User: {{post.username}}</h3>
+        <h3 id="score">Score: {{post.score}}</h3>
+        {{/if}}
+      </div>
+      <div class="mode">
+        <h3 id="h">Play/ </h3>
+        <h3 id="h"></h3>
+      </div>
+      <div class="home" onclick="confirm_home()">
+        <i class="fas fa-home"></i>
+      </div>
+    </div>
+
+    <div class="lives" id="lives">
+      <i class="fas fa-heart" id='live1'></i>
+      <i class="fas fa-heart" id='live2'></i>
+      <i class="fas fa-heart" id='live3'></i>
+    </div>
+    <div class="ques" id="ques">
+      <h3>Find a: </h3>
+      <h4 id="question">...</h4>
+    </div>
+
+    <div class="addscore-container">
+      <div class="add-comment"></div>
+    </div>
+
+    <div class="webcam-container" id="webcamContainer">
+      <video id="webcam" autoplay playsinline width="95%" height="350px"></video>
+      <canvas id="canvas" class="d-none"></canvas>
+      <div class="flash"></div>
+      <audio id="snapSound" src="/audio/audio_snap.wav" preload="auto"></audio>
+    </div>
+    <img src="/images/congrats2.png" id="congrats">
+    <img src="/images/gamelost.png" id="gamelost">
+    <div class="save-score" id="savescore" onclick="saveScore()">
+      <form action="/auth/save_score" method="POST">
+        <input type="text" id="nwscore" name="nwscore" value="" style="display: none;">
+        <button id="savescorebtn" type="submit">Save Score</button>
+      </form>
+    </div>
+    <div class="btns" id='btns'>
+      <div onclick="confirm_back()">
+        <i class="fas fa-backspace" id='backbtn'></i>
+      </div>
+      <div onclick="snap()">
+        <i class="fas fa-camera" id="btnScreenshot2"></i>
+      </div>
+      <div onclick="flip()">
+        <i class="fas fa-toggle-on" id="toggle"></i>
+      </div>
+    </div>
+    <div onclick="nextQues()" id='nextques'>
+      <i class="fas fa-forward"></i>
+    </div>
+  </div>
+
+  <script src="/scripts/curr_model.js" type="text/javascript"></script>
+  <script src="/scripts/title_play.js" type="text/javascript"></script>
+  <script src="/scripts/confirm.js" type="text/javascript"></script>
+  <script src="/scripts/class_names.js" type="text/javascript"></script>
+  <script src="/scripts/score.js" type="text/javascript"></script>
+  <script src="/scripts/predict_play.js" type="text/javascript"></script>
+</body>
+
+</html>

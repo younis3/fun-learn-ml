@@ -1,0 +1,119 @@
+.app-container {
+  text-align: center;
+  width: 530px;
+  height: 943px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #0f2027;
+  border-style: solid;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 45px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app-container h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 90px;
+  font-size: 24px;
+  padding: 24px 0 24px 0;
+}
+
+.reg-form {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-family: Tahoma, Geneva, sans-serif;
+  padding: 4px;
+}
+
+.reg-form h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 4px 0 4px 0;
+}
+
+.reg-form input[type="password"],
+.reg-form input[type="text"],
+.reg-form input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.reg-form form label {
+  margin-top: 15px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.reg-form select {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: black;
+  padding: 2px;
+  height: 25px;
+}
+
+.reg-form select:hover {
+  background-color: rgb(140, 151, 151);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.reg-form select select option {
+  border: none;
+}
+
+.reg-form input[type="submit"] {
+  width: 60%;
+  padding: 10px;
+  background-color: #535b63;
+  border: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 98px;
+}
+
+.reg-form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #819db8;
+  color: #323136;
+}
+
+.reg-form p {
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.reg-form p a {
+  color: rgb(174, 198, 240);
+  font-weight: 500;
+}
+
+.err h4 {
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 59, 59);
+  padding: 4px;
+  margin-bottom: -30px;
+}
+
+.success h4 {
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(115, 163, 96);
+  padding: 4px;
+  margin-bottom: -30px;
+}

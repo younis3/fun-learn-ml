@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">FunLearn - Learn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/learn-style.css">
+  <link rel="stylesheet" href="css/webcam-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="nav">
+      <div class="name">
+        {{#if post}}
+        <h3>User: {{post.username}}</h3>
+        <h3>Score: {{post.score}}</h3>
+        {{/if}}
+      </div>
+      <div class="mode">
+        <h3 id="h">Learn/ </h3>
+        <h3 id="h"></h3>
+      </div>
+      <div class="home" onclick="confirm_home()">
+        <i class="fas fa-home"></i>
+      </div>
+    </div>
+    <div class="answer">
+      <h3>This is: </h3>
+      <h4 id="answer">____</h4>
+    </div>
+    <div class="webcam-container">
+      <video id="webcam" autoplay playsinline width="95%" height="350px"></video>
+      <canvas id="canvas" class="d-none"></canvas>
+    </div>
+    <div class="btns">
+      <div onclick="confirm_back()">
+        <i class="fas fa-backspace"></i>
+      </div>
+      <div onclick="flip()">
+        <i class="fas fa-toggle-on"></i>
+      </div>
+    </div>
+  </div>
+  <script src="/scripts/curr_model.js" type="text/javascript"></script>
+  <script src="/scripts/title_learn.js" type="text/javascript"></script>
+  <script src="/scripts/confirm.js" type="text/javascript"></script>
+  <script src="/scripts/class_names.js" type="text/javascript"></script>
+  <script src="/scripts/predict.js" type="text/javascript"></script>
+</body>
+
+</html>

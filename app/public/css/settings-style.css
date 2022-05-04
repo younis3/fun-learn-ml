@@ -1,0 +1,153 @@
+.app-container {
+  text-align: center;
+  width: 530px;
+  height: 943px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #0f2027;
+  border-style: solid;
+  border-radius: 1px;
+  padding: 2px;
+  margin-top: 45px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.app-container .nav {
+  display: flex;
+}
+
+.app-container .nav .name {
+  padding: 10px;
+  margin-right: auto;
+  color: whitesmoke;
+}
+
+.app-container .nav .name h3 {
+  text-align: left;
+}
+
+.home .fa-home {
+  margin-top: 20px;
+  color: white;
+  font-size: 32px;
+  padding: 12px;
+}
+
+.home .fa-home:hover {
+  cursor: pointer;
+}
+
+.app-container h2 {
+  color: whitesmoke;
+  font-size: 28px;
+  margin-top: 80px;
+}
+
+.app-container .stngs-btns {
+  text-align: center;
+  position: relative;
+  margin-top: 160px;
+}
+
+.app-container .stngs-btns button {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 60px;
+  border: none;
+  font-size: 17px;
+  font-weight: 550;
+  background-color: #ffffff;
+}
+
+.app-container .stngs-btns button:hover {
+  background-color: rgb(140, 151, 151);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.app-container .form select {
+  font-size: larger;
+  font-weight: 500;
+  margin-top: 20px;
+  color: black;
+  padding: 5px;
+}
+
+.app-container .form select:hover {
+  background-color: rgb(140, 151, 151);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.app-container .form select option {
+  border: none;
+}
+
+.app-container .form .lng-icon {
+  display: block;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 140px;
+}
+
+.app-container .form .sbmt {
+  display: block;
+  position: relative;
+  margin-top: 180px;
+  height: 40px;
+  width: 35%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.app-container .form #cancel {
+  margin-top: 25px;
+}
+
+.app-container .form .sbmt:hover {
+  background-color: rgb(140, 151, 151);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.app-container .form input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  width: 50%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.app-container .form input:first-child {
+  margin-top: 60px;
+}
+
+.err-change-username {
+  text-align: center;
+}
+
+.err-change-username h4 {
+  margin-top: 60px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 59, 59);
+  padding: 4px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.warning-change-lang h4 {
+  margin-top: 55px;
+  color: rgb(255, 255, 255);
+}

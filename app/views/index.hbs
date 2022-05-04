@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>FunLearn - Login</title>
+  <link rel="stylesheet" href="/css/login-style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <h1>Welcome to Fun Learn</h1>
+    <div class="login-form">
+      <form action="/auth/login" method="POST">
+        <input type="text" name="username" placeholder="username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+        <div class="err">
+          {{#if message }}
+          <h4>{{message}}</h4>
+          {{/if}}
+        </div>
+        <div>
+          <p>New to this app? <a href="Register">Register Here</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
