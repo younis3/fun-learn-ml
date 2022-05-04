@@ -27,5 +27,5 @@ ___________________
 1- Open XAMPP MySQL Or MySQL Workbench  
 2- Import database from db folder  
 3- Open app folder in code editor  
-4- open new terminal then run "npm start"  
+4- In terminal Run "npm start"  
 5- open browser (app default: localhost:3000)
